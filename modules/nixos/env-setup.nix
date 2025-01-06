@@ -37,9 +37,6 @@
       enableCompletion = true;
       enableLsColors = true;
       autosuggestions.enable = true;
-	  shellAliases = {
-		ll = "ls -sahl";
-	  };
       ohMyZsh = {
         enable = true;
         plugins = [
