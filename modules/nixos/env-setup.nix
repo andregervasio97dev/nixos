@@ -37,6 +37,10 @@
       enableCompletion = true;
       enableLsColors = true;
       autosuggestions.enable = true;
+	  shellAliases = {
+        ll = "ls -sahl";
+		tree = "tree --filesfirst";
+	  };
       ohMyZsh = {
         enable = true;
         plugins = [
