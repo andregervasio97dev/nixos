@@ -14,7 +14,9 @@
       fastfetch
       btop
       wayclip
-	  nil
+	  cargo
+	  python313
+	  python313Packages.pip
       kdePackages.xwaylandvideobridge
     ];
     variables = {
@@ -40,6 +42,7 @@
       };
     };
     firefox.enable = true;
+	npm.enable = true;
   };
   fonts.packages = with pkgs; [
     nerd-fonts._0xproto
