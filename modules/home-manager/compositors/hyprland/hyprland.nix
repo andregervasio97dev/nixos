@@ -129,11 +129,12 @@
         "$mainMod, return, exec, $terminal"
         "$mainMod, Q, killactive,"
         "$mainMod, M, exit,"
-        "$mainMod, R, exec, $menu"
+        "$mainMod, E, exec, $menu"
         "$mainMod, N, exec, $fileManager"
         "$mainMod, V, togglefloating,"
         "$mainMod, P, pseudo,"
         "$mainMod, O, togglesplit,"
+		"$mainMod, F, fullscreen"
 
 
 	# Move focus
