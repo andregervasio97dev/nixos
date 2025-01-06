@@ -6,6 +6,7 @@
       tree
       curl
       git
+	  unzip
       neovim
       wget
       kitty
