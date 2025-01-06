@@ -17,6 +17,7 @@
       wayclip
 	  cargo
 	  go
+	  libgcc
 	  python313
 	  python313Packages.pip
       kdePackages.xwaylandvideobridge
