@@ -46,6 +46,7 @@
     };
     firefox.enable = true;
 	npm.enable = true;
+	nix-ld.enable = true;
   };
   fonts.packages = with pkgs; [
     nerd-fonts._0xproto
