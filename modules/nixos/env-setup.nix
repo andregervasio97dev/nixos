@@ -16,6 +16,7 @@
       btop
       wayclip
 	  cargo
+	  go
 	  python313
 	  python313Packages.pip
       kdePackages.xwaylandvideobridge
