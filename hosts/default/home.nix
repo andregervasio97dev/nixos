@@ -5,7 +5,6 @@
     ../../modules/home-manager/allow-unfree.nix
     ../../modules/home-manager/editors/nvim.nix
     ../../modules/home-manager/terminals/kitty.nix
-	../../modules/home-manager/zsh-aliases.nix
     ../../modules/home-manager/compositors/hyprland/hyprland.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
