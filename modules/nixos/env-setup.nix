@@ -38,7 +38,7 @@
       enableLsColors = true;
       autosuggestions.enable = true;
 	  shellAliases = {
-		ll = "ls -sahl"
+		ll = "ls -sahl";
 	  };
       ohMyZsh = {
         enable = true;
