@@ -14,6 +14,7 @@
       fastfetch
       btop
       wayclip
+	  nil
       kdePackages.xwaylandvideobridge
     ];
     variables = {
