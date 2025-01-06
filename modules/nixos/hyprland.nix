@@ -23,12 +23,14 @@
     # GUI for network
     networkmanagerapplet
 
+	qt5.qtwayland
+	qt6.qtwayland
+
   ];
   xdg.portal = {
     enable = true;
     extraPortals = [ 
       pkgs.xdg-desktop-portal-gtk 
-	  pkgs.xdg-desktop-portal-hyprland
     ];
   };
 }
