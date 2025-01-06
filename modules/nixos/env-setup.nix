@@ -18,6 +18,7 @@
 	  cargo
 	  go
 	  libgcc
+	  rustc
 	  python313
 	  python313Packages.pip
       kdePackages.xwaylandvideobridge
