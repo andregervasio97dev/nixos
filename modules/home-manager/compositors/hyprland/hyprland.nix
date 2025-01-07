@@ -80,6 +80,8 @@
 				};
 				"bluetooth" = {
 					format = " {status}";
+					format-connected = " {device_alias}";
+					tooltip-format-connected = "{num_connections} connected";
 				};
 			};
 		};
