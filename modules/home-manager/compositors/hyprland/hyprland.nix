@@ -32,17 +32,15 @@
 				padding: 0 5px;
 				border: 1px solid rgba(110, 110, 110, 0.8);
 				border-radius: 5px;
-				background-color: rgba(40, 40, 40, 0.8)
+				background-color: rgba(40, 40, 40, 0.8);
+				color: rgb(255, 255, 255);
 			}
 			#clock, #battery, #cpu, #memory, #pulseaudio {
 				padding: 0 5px;
 				border: 1px solid rgba(110, 110, 110, 0.8);
 				border-radius: 5px;
-				background-color: rgba(40, 40, 40, 0.8)
-			}
-			#cpu {
-				\"interval\": 10,
-				\"format\": \"CPU: {usage}%\"
+				background-color: rgba(40, 40, 40, 0.8);
+				color: rgb(255, 255, 255);
 			}
 		'';
 	};
