@@ -4,7 +4,7 @@ let
 	set-random-wallpaper = pkgs.pkgs.writeShellScriptBin "set-random-wallpaper"
 	''
 		hyprctl hyprpaper unload all
-		wallpapers''\=''\(''\$''\(ls -d ~/Pictures/*''\)''\)
+		wallpapers''\=''\(''\$''\(ls -d /home/illyanda/Pictures/*''\)''\)
 		wall''\=''\$''\{wallpapers''\[ ''\$RANDOM ''\% ''\(''\$''\{''\#wallpapers''\[''\@''\]''\} ''\+ 1''\) ''\]''\}
 		hyprctl hyprpaper preload ''\$wall
 		hyprctl hyprpaper wallpaper ''\,''\$wall
@@ -52,7 +52,7 @@ in {
 			'';
 		serviceConfig = {
 			Type = "oneshot";
-			User = "root";
+			User = "illyanda";
 		};
 	};
 }
