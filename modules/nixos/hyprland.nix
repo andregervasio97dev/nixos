@@ -39,7 +39,7 @@
 	systemd.services."hello-world" = {
 		script = ''
 			set -eu
-			${pkgs.coreutils}/bin/echo "Hello World"
+			${pkgs.coreutils}/bin/env/zsh /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
 			'';
 		serviceConfig = {
 			Type = "oneshot";
