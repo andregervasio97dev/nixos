@@ -62,6 +62,6 @@
   security.sudo.configFile = "Defaults env_keep+=SSH_AUTH_SOCK";
   services.cron = {
 	enable = true;
-	systemCronJobs = [ "*/1* * * * *	zsh $HOME/Scripts/set_random_wallpaper.sh >> /dev/null" ];
+	systemCronJobs = [ "*/1* * * * * root zsh $HOME/Scripts/set_random_wallpaper.sh >> /dev/null" ];
   };
 }
