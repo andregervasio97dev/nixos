@@ -1,6 +1,15 @@
 { pkgs, inputs, ... }:
 
-{
+let
+	set-random-wallpaper = pkgs.pkgs.writeShellScriptBin "set-random-wallpaper"
+	''
+		hyprctl hyprpaper unload all
+		wallpapers=($(ls -d ~/Pictures/*))
+		wall=$\{wallpapers[ $RANDOM % ($\{#wallpapers[@]} + 1) ]}
+		hyprctl hyprpaper preload $wall
+		hyprctl hyprpaper wallpaper ,$wall
+	'';
+in {
 	programs.hyprland = {
 		enable = true;
 		package = inputs.hyprland.packages."${pkgs.system}".hyprland;
@@ -39,7 +48,7 @@
 	systemd.services."set-random-wallpaper" = {
 		script = ''
 			set -eu
-			${pkgs.coreutils}/bin/sh /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
+			${set-random-wallpaper}/bin/set-random-wallpaper
 			'';
 		serviceConfig = {
 			Type = "oneshot";
