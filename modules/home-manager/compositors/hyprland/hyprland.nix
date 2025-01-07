@@ -25,10 +25,10 @@
 					"tray"
 				];
 				"hyprland/workspaces" = {
-					format = "<sub>{icon}</sub>{windows}";
+					format = "<sub>{id}</sub>{windows}";
 					format-window-separator = " ";
 					window-rewrite = {
-						"title<.*kitty.*>" = ">_";
+						"kitty" = ">_";
 					};
 				};
 				"clock" = {
