@@ -61,6 +61,10 @@
 					format = "{usage}% ";
 					tooltip = "true";
 				};
+				"memory" = {
+					interval = 30;
+					format = "{used:0.1f}G/{total:0.1f}G  ";
+				};
 			};
 		};
 		style = ''
