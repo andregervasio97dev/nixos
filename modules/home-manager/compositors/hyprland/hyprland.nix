@@ -161,10 +161,12 @@ wayland.windowManager.hyprland = {
 # Autostart daemons and processes
 		exec-once = [
 			"$terminal"
-				"nm-applet &"
-				"waybar &"
-				"hyprpaper &"
+			"nm-applet &"
+			"waybar &"
+			"hyprpaper &"
 		];
+# Execs every reload
+		exec = "~/Scripts/set_random_wallpaper.sh";
 
 # Env variables
 		env = [
