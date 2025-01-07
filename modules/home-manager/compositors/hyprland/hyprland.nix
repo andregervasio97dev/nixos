@@ -5,6 +5,9 @@ let
 		background-color = "rgba(100, 100, 100, 0.6)";
 		border = "1px solid rgb(60, 60, 60)";
 	};
+	lightColors = {
+		background-color = "rgba(160, 160, 160, 0.6)";
+	};
 in {
 	programs.waybar = {
 		enable = true;
@@ -128,7 +131,7 @@ in {
 				padding: 0 5px;
 				border: ${mainColors.border};
 				border-radius: 5px;
-				background-color: ${mainColors.background-color};
+				background-color: ${lightColors.background-color};
 			}
 		'';
 };
