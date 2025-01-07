@@ -22,7 +22,7 @@
 				];
 				"cpu" = {
 					interval = 10;
-					format = {usage}%󱊣;
+					format = {usage}% ;
 					tooltip = true;
 				};
 			};
