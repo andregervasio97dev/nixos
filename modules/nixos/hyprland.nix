@@ -4,7 +4,7 @@ let
 		name = "wallpaper-random";
 		runtimeInputs = [ "zsh" ];
 	text = ''
-		bash /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
+		zsh /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
 	'';
 	};
 in {
