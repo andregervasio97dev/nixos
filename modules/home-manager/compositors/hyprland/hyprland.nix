@@ -26,9 +26,15 @@
 			};
 		};
 		style = ''
+			
+			window#waybar {
+				background-color: rgba(255, 255, 255, 0);
+			}
 			#workspaces button {
 				padding: 0 5px;
-				border: 1px solid rgba( 110, 110, 110, 0.8 );
+				border: 1px solid rgba(110, 110, 110, 0.8);
+				border-radius: 5px;
+				background-color: rgba(40, 40, 40, 0.8)
 			}
 		'';
 	};
