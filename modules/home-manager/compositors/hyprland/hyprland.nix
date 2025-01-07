@@ -163,7 +163,7 @@ wayland.windowManager.hyprland = {
 			"$terminal"
 			"nm-applet &"
 			"waybar &"
-			"hyprpaper && ~/Scripts/set_random_wallpaper.sh"
+			"hyprpaper && sleep 1 && zsh $HOME/Scripts/set_random_wallpaper.sh"
 		];
 
 # Env variables
