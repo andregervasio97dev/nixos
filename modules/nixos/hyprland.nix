@@ -27,16 +27,16 @@
 			pkgs.xdg-desktop-portal-gtk 
 		];
 	};
-	systemd.timers."hello-world" = {
+	systemd.timers."set-random-wallpaper" = {
 		wantedBy = [ "timers.target" ];
 		timerConfig = {
-			OnBootSec = "5m";
-			OnUnitActiveSec = "5m";
-			Unit = "hello-world.service";
+			OnBootSec = "10s";
+			OnUnitActiveSec = "10s";
+			Unit = "set-random-wallpaper.service";
 		};
 	};
 
-	systemd.services."hello-world" = {
+	systemd.services."set-random-wallpaper" = {
 		script = ''
 			set -eu
 			${pkgs.coreutils}/bin/env/zsh /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
