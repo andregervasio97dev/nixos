@@ -22,8 +22,8 @@
 				];
 				"cpu" = {
 					interval = 10;
-					format = {usage}% ;
-					tooltip = true;
+					format = "{usage}% ";
+					tooltip = "true";
 				};
 			};
 		};
