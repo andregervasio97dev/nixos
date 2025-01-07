@@ -20,6 +20,22 @@
 				modules-right = [
 					"tray"
 				];
+				"battery" = {
+					interval = 60;
+					states = {
+						good = 75;
+						warning = 45;
+						critical = 15;
+					};
+					format = "{capacity}% {icon}";
+					format-icons = [
+						"󱊣"
+						"󱊢"
+						"󱊡"
+					];
+					format-charging = "{capacity}% 󱊦";
+					format-plugged = "{capacity}% 󱊦";
+				};
 				"cpu" = {
 					interval = 10;
 					format = "{usage}% ";
