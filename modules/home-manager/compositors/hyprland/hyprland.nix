@@ -41,8 +41,8 @@
 				background-color: rgba(40, 40, 40, 0.8)
 			}
 			#cpu {
-				interval: 10,
-				format: \"CPU: {usage}%\"
+				\"interval\": 10,
+				\"format\": \"CPU: {usage}%\"
 			}
 		'';
 	};
