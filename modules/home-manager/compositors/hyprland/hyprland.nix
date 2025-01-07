@@ -104,6 +104,10 @@ in {
 			window#waybar {
 				background-color: rgba(255, 255, 255, 0);
 			}
+			window#waybar .top .modules-left label.module {
+				border: ${mainColors.border};
+				border-radius: 5px;
+			}
 			#workspaces button {
 				margin: 0 2px;
 				padding: 0 5px;
