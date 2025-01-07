@@ -29,6 +29,9 @@
 					format-window-separator = " ";
 					window-rewrite = {
 						"kitty" = ">_";
+						"firefox" = "";
+						"waterfox" = "";
+						"dolphin" = "";
 					};
 				};
 				"clock" = {
@@ -104,9 +107,6 @@
 				border-radius: 5px;
 				background-color: rgba(80, 80, 80, 0.8);
 				color: rgb(255, 255, 255);
-			}
-			#workspaces button sub {
-				margin-right: 1px;
 			}
 
 			#clock,
