@@ -24,6 +24,13 @@
 				modules-right = [
 					"tray"
 				];
+				"hyprland/workspaces" = {
+					format = "<sub>{icon}</sub>{windows}";
+					format-window-separator = " ";
+					window-rewrite = {
+						"title<.*kitty.*>" = ">_";
+					};
+				};
 				"clock" = {
 					format = "{:%H:%M   %d/%m/%Y  }";
 					tooltip-format = "<tt><small>{calendar}</small></tt>";
