@@ -28,7 +28,7 @@
 		style = ''
 			#workspaces button {
 				padding: 0 5px;
-				border: 1px solid rgba(BB, BB, BB, 0.8);
+				border: 1px solid rgba( 110, 110, 110, 0.8 );
 			}
 		'';
 	};
