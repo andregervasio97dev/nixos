@@ -35,11 +35,6 @@
 							today = "<span color='#ff6699'><b><u>{}</u></b></span>";
 						};
 					};
-					actions = {
-						on-click-right = "mode";
-						on-scroll-up = [ "tz_up" "shift_up"];
-						on-scroll-down = [ "tz_down" "shift_down"];
-					};
 				};
 				"battery" = {
 					interval = 60;
@@ -65,6 +60,10 @@
 				"memory" = {
 					interval = 30;
 					format = "{used:0.1f}G/{total:0.1f}G  ";
+				};
+				"pulseaudio" = {
+					format = "{volume}%  ";
+					scroll-step = 5;
 				};
 			};
 		};
