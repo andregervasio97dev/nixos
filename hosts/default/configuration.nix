@@ -57,13 +57,15 @@
   # You can disable this if you're only using the Wayland session.
   services.xserver.enable = true;
 
-  # Enable the KDE Plasma Desktop Environment.
+# Enables flatpak
+  services.flatpak.enable = true;
+# Enable the KDE Plasma Desktop Environment.
   services.displayManager = {
-    sddm = {
-		enable = true;
-		autoNumlock = true;
-	};
-	defaultSession = "hyprland";
+	  sddm = {
+		  enable = true;
+		  autoNumlock = true;
+	  };
+	  defaultSession = "hyprland";
   };
   services.desktopManager.plasma6.enable = true;
 
