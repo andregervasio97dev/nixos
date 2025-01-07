@@ -14,6 +14,9 @@
 					"cpu"
 					"memory"
 					"pulseaudio"
+					"temperature"
+					"backlight"
+					"bluetooth"
 				];
 				modules-center = [
 					"hyprland/workspaces"
@@ -65,6 +68,19 @@
 					format = "{volume}%  ";
 					scroll-step = 5;
 				};
+				"temperature" = {
+					format = "{temperatureC}°C ";
+				};
+				"backlight" = {
+					format = "{percent}% {icon}";
+					format-icons = [
+						"󰃟 "
+						"󰃠 "
+					];
+				};
+				"bluetooth" = {
+					format = " {status}";
+				};
 			};
 		};
 		style = ''
@@ -80,7 +96,15 @@
 				background-color: rgba(80, 80, 80, 0.8);
 				color: rgb(255, 255, 255);
 			}
-			#clock, #battery, #cpu, #memory, #pulseaudio {
+
+			#clock,
+			#battery,
+			#cpu,
+			#memory,
+			#pulseaudio,
+			#temperature,
+			#backlight,
+			#bluetooth {
 				margin: 0 2px;
 				padding: 0 5px;
 				border: 1px solid rgba(110, 110, 110, 0.8);
