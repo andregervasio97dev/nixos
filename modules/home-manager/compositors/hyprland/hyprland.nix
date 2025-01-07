@@ -21,16 +21,14 @@
 					"tray"
 				];
 				"clock" = {
-					format = "{:%H:%M - %d/%m/%Y}";
+					format = "{:%H:%M - %d/%m/%Y}";
 					tooltip-format = "<tt><small>{calendar}</small></tt>";
 					calendar = {
 						mode = "year";
 						mode-mon-col = 4;
-						week-pos = "right";
 						on-scroll = 1;
 						format = {
 							months = "<span color='#ffead3'><b>{}</b></span>";
-							weeks = "<span color='#99ffdd'><b>W{}</b></span>";
 							days = "<span color='#ecc6d9'><b>{}</b></span>";
 							weekdays = "<span color='#ffcc66'><b>{}</b></span>";
 							today = "<span color='#ff6699'><b><u>{}</u></b></span>";
