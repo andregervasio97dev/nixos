@@ -105,6 +105,9 @@
 				background-color: rgba(80, 80, 80, 0.8);
 				color: rgb(255, 255, 255);
 			}
+			#workspaces sub {
+				margin-right: 1px;
+			}
 
 			#clock,
 			#battery,
