@@ -1,13 +1,12 @@
 { pkgs, inputs, ... }:
-let
+ let
 	wallpaper-random = pkgs.writeShellApplication {
 		name = "wallpaper-random";
-		runtimeInputs = [ "zsh" ];
-	text = ''
-		zsh /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
-	'';
+		text = ''
+			bash /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
+		'';
 	};
-in {
+in{
 	programs.hyprland = {
 		enable = true;
 		package = inputs.hyprland.packages."${pkgs.system}".hyprland;
@@ -44,6 +43,7 @@ in {
 	};
 
 	systemd.services."wallpaper-random" = {
+		path = with pkgs; [ bash ];
 		script = ''
 			set -eu
 			${wallpaper-random}/bin/wallpaper-random
