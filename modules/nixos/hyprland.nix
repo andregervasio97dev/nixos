@@ -1,9 +1,12 @@
 { pkgs, inputs, ... }:
 let
-	wallpaper-random = pkgs.writeShellScriptBin "wallpaper-random"
-	''
+	wallpaper-random = pkgs.writeShellApplication {
+		name = "wallpaper-random";
+		runtimeInputs = [ "bash" ];
+	text = ''
 		bash /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
 	'';
+	};
 in {
 	programs.hyprland = {
 		enable = true;
