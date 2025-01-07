@@ -91,7 +91,7 @@
 			}
 			#tray {
 				margin: 0 2px;
-				padding 0 5px;
+				padding: 0 5px;
 				border: 1px solid rgba(40, 40, 40, 0.8);
 				border-radius: 5px;
 				background-color: rgba(110, 110, 110, 0.6);
