@@ -40,7 +40,7 @@
 	systemd.services."set-random-wallpaper" = {
 		script = ''
 			set -eu
-			zsh $HOME/Scripts/set_random_wallpaper.sh
+			zsh /home/illyanda/Scripts/set_random_wallpaper.sh
 		'';
 		serviceConfig = {
 			Type = "oneshot";
