@@ -1,6 +1,7 @@
 { ... }:
-
-{
+let
+	textColor = "rgb(255, 255, 255)";
+in {
 	programs.waybar = {
 		enable = true;
 		settings = {
@@ -106,10 +107,10 @@
 				border: 1px solid rgba(110, 110, 110, 0.8);
 				border-radius: 5px;
 				background-color: rgba(80, 80, 80, 0.8);
-				color: rgb(255, 255, 255);
+				color: rgb(30, 30, 30);
 			}
 			#workspaces button.active {
-				color: #6710C2;
+				color: ${textColor};
 			}
 
 			#clock,
