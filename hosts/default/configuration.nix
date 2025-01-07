@@ -59,8 +59,11 @@
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager = {
-    sddm.enable = true;
-    defaultSession = "hyprland";
+    sddm = {
+		enable = true;
+		autoNumlock = true;
+	}
+	defaultSession = "hyprland";
   };
   services.desktopManager.plasma6.enable = true;
 
