@@ -27,26 +27,4 @@
 			pkgs.xdg-desktop-portal-gtk 
 		];
 	};
-
-	systemd.timers."set_random_wallpaper" = {
-		wantedBy = [ "timers.target" ];
-		timerConfig = {
-			OnBootSec = "1m";
-			OnUnitActiveSec = "30m";
-			Unit = "set_random_wallpaper.service";
-		};
-	};
-
-	systemd.services."set-random-wallpaper" = {
-		script = ''
-			set -eu
-			zsh /home/illyanda/Scripts/set_random_wallpaper.sh
-		'';
-		serviceConfig = {
-			Type = "oneshot";
-			User = "root";
-		};
-	};
-
-	
 }
