@@ -21,7 +21,7 @@
 					"tray"
 				];
 				"clock" = {
-					format = "{:%H:%M - %d/%m/%Y}";
+					format = "{  :%H:%M - %d/%m/%Y}";
 					tooltip-format = "<tt><small>{calendar}</small></tt>";
 					calendar = {
 						mode = "year";
