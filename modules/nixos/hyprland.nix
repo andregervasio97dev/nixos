@@ -2,7 +2,7 @@
 let
 	wallpaper-random = pkgs.writeShellApplication {
 		name = "wallpaper-random";
-		runtimeInputs = [ bash ];
+		runtimeInputs = [ "zsh" ];
 	text = ''
 		bash /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
 	'';
