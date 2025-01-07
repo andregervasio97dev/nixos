@@ -105,8 +105,12 @@ in {
 				background-color: rgba(255, 255, 255, 0);
 			}
 			window#waybar .top box.horizontal.modules-left label.module {
+				margin: 0 2px;
+				padding: 0 5px;
 				border: ${mainColors.border};
 				border-radius: 5px;
+				background-color: ${mainColors.background-color};
+				color: ${mainColors.textColor};
 			}
 			#workspaces button {
 				margin: 0 2px;
@@ -117,22 +121,6 @@ in {
 				color: ${mainColors.textColor};
 			}
 			#workspaces button.active {
-				color: ${mainColors.textColor};
-			}
-
-			#clock,
-			#battery,
-			#cpu,
-			#memory,
-			#pulseaudio,
-			#temperature,
-			#backlight,
-			#bluetooth {
-				margin: 0 2px;
-				padding: 0 5px;
-				border: ${mainColors.border};
-				border-radius: 5px;
-				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
 			}
 			#tray {
