@@ -35,14 +35,14 @@
 		'';
 		serviceConfig = {
 			Type = "oneshot";
-			User = "illyanda";
+			User = "root";
 		};
 	};
 
 	systemd.timers."set_random_wallpaper" = {
 		wantedBy = [ "timers.target" ];
 		timerConfig = {
-			OnBootSec = "30s";
+			OnBootSec = "1m";
 			OnUnitActiveSec = "30m";
 			Unit = "set_random_wallpaper.service";
 		};
