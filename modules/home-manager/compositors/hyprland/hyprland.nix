@@ -20,6 +20,9 @@
 				modules-right = [
 					"tray"
 				];
+				"hyprland/workspaces" = {
+					format = "{icon} {windows}";
+				};
 			};
 		};
 	};
