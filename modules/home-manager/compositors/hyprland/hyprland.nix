@@ -181,25 +181,30 @@
 
 			  ];
 
+			  bindm = [
+			    "SUPER, mouse:272, movewindow"
+				"SUPER, mouse:273, resizewindow"
+			  ];
+
 # Laptop multimedia keys
-	  bindel = [
-		  ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-			  ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-			  ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-			  ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-			  ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-			  ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
-	  ];
+			  bindel = [
+				  ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+					  ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+					  ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+					  ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+					  ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
+					  ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+			  ];
 
 # Extra
-	  windowrulev2 = [
-		  "suppressevent maximize, class:.*"
-			  "opacity 0.0 override, class:^(xwaylandvideobridge)$"
-			  "noanim, class:^(xwaylandvideobridge)$"
-			  "noinitialfocus, class:^(xwaylandvideobridge)$"
-			  "maxsize 1 1, class:^(xwaylandvideobridge)$"
-			  "noblur, class:^(xwaylandvideobridge)$"
-	  ];
+			  windowrulev2 = [
+				  "suppressevent maximize, class:.*"
+					  "opacity 0.0 override, class:^(xwaylandvideobridge)$"
+					  "noanim, class:^(xwaylandvideobridge)$"
+					  "noinitialfocus, class:^(xwaylandvideobridge)$"
+					  "maxsize 1 1, class:^(xwaylandvideobridge)$"
+					  "noblur, class:^(xwaylandvideobridge)$"
+			  ];
 	};
   };
 }
