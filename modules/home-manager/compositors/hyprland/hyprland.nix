@@ -20,21 +20,29 @@
 				modules-right = [
 					"tray"
 				];
-				"hyprland/workspaces" = {
-					format = "{icon} {windows}";
-				};
 			};
 		};
 		style = ''
 			
 			window#waybar {
 				background-color: rgba(255, 255, 255, 0);
+				color: rgb(255, 255, 255);
 			}
 			#workspaces button {
 				padding: 0 5px;
 				border: 1px solid rgba(110, 110, 110, 0.8);
 				border-radius: 5px;
 				background-color: rgba(40, 40, 40, 0.8)
+			}
+			#clock, #battery, #cpu, #memory, #pulseaudio {
+				padding: 0 5px;
+				border: 1px solid rgba(110, 110, 110, 0.8);
+				border-radius: 5px;
+				background-color: rgba(40, 40, 40, 0.8)
+			}
+			#cpu {
+				interval: 10,
+				format: \"CPU: {usage}%\"
 			}
 		'';
 	};
