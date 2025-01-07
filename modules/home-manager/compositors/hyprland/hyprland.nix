@@ -7,7 +7,6 @@
 			mainBar = {
 				layer = "bottom";
 				position = "top";
-				height = 15;
 				modules-left = [
 					"clock"
 					"battery"
@@ -70,6 +69,7 @@
 		};
 		style = ''
 			window#waybar {
+				padding: 2px 0 0 0;
 				background-color: rgba(255, 255, 255, 0);
 				color: rgb(255, 255, 255);
 			}
