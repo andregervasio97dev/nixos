@@ -104,7 +104,7 @@ in {
 			window#waybar {
 				background-color: rgba(255, 255, 255, 0);
 			}
-			window#waybar .top .modules-left label.module {
+			window#waybar .top box.modules-left label.module {
 				border: ${mainColors.border};
 				border-radius: 5px;
 			}
