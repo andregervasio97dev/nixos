@@ -7,6 +7,7 @@
 			mainBar = {
 				layer = "bottom";
 				position = "top";
+				height = 15;
 				modules-left = [
 					"clock"
 					"battery"
@@ -71,7 +72,6 @@
 			window#waybar {
 				background-color: rgba(255, 255, 255, 0);
 				color: rgb(255, 255, 255);
-				height: 15px;
 			}
 			#workspaces button {
 				margin: 0 2px;
