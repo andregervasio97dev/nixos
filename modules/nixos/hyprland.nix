@@ -39,7 +39,7 @@
 	systemd.services."set-random-wallpaper" = {
 		script = ''
 			set -eu
-			${pkgs.coreutils}/bin/env/bash /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
+			${pkgs.coreutils}/bin/sh /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
 			'';
 		serviceConfig = {
 			Type = "oneshot";
