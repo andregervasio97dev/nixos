@@ -108,6 +108,9 @@
 				background-color: rgba(80, 80, 80, 0.8);
 				color: rgb(255, 255, 255);
 			}
+			#workspaces button.active {
+				color: #6710C2;
+			}
 
 			#clock,
 			#battery,
