@@ -3,7 +3,7 @@
 	wallpaper-random = pkgs.writeShellApplication {
 		name = "wallpaper-random";
 		text = ''
-			bash /home/illyanda/Scripts/set_random_wallpaper.sh >> /dev/null
+			bash /home/illyanda/Scripts/set_random_wallpaper.sh
 		'';
 	};
 in{
