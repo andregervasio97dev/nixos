@@ -2,9 +2,9 @@
 let
 	mainColors = {
 		textColor = "rgb(255, 255, 255)";
-		background-color = "rgba(140, 140, 140, 0.6)";
+		background-color = "rgba(100, 100, 100, 0.6)";
+		border = "1px solid rgb(60, 60, 60)";
 	};
-
 in {
 	programs.waybar = {
 		enable = true;
@@ -107,7 +107,7 @@ in {
 			#workspaces button {
 				margin: 0 2px;
 				padding: 0 5px;
-				border: 1px solid rgba(110, 110, 110, 0.8);
+				border: ${mainColors.border};
 				border-radius: 5px;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
@@ -126,7 +126,7 @@ in {
 			#bluetooth {
 				margin: 0 2px;
 				padding: 0 5px;
-				border: 1px solid rgba(200, 200, 200, 0.8);
+				border: ${mainColors.border};
 				border-radius: 5px;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
@@ -134,10 +134,9 @@ in {
 			#tray {
 				margin: 0 2px;
 				padding: 0 5px;
-				border: 1px solid rgba(40, 40, 40, 0.8);
+				border: ${mainColors.border};
 				border-radius: 5px;
 				background-color: ${mainColors.background-color};
-				color: rgb(255, 255, 255);
 			}
 		'';
 };
