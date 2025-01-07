@@ -58,7 +58,7 @@ in {
 					};
 				};
 				"battery" = {
-					interval = 60;
+					interval = 10;
 					states = {
 						warning = 45;
 						critical = 15;
