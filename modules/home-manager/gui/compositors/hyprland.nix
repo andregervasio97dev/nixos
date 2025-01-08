@@ -382,7 +382,7 @@ wayland.windowManager.hyprland = {
 			"noblur, class:^(xwaylandvideobridge)$"
 			# Defining workspaces for certain windows
 			"workspace 2 silent, class:^(${programs.browser})$"
-			"workspace 3 silent, class:^(${programs.fileManager})$"
+			"workspace 3 silent, class:^(Dolphin)$"
 			"workspace 10 silent, class:^(discord)$"
 			"workspace 9 silent, class:^(steam)$"
 		];
