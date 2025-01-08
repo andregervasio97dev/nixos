@@ -36,6 +36,7 @@ in {
 		settings = {
 			prompt = "";
 			sort_order = "alphabetical";
+			width = "25%";
 		};
 		style = ''
 			#outer-box {
