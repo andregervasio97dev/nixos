@@ -365,7 +365,7 @@ wayland.windowManager.hyprland = {
 				"noinitialfocus, class:^(xwaylandvideobridge)$"
 				"maxsize 1 1, class:^(xwaylandvideobridge)$"
 				"noblur, class:^(xwaylandvideobridge)$"
-				"workspace 2 silent, title: (firefox)(.*)"
+				"workspace 2 silent, class:^(firefox)$"
 		];
 	};
 };
