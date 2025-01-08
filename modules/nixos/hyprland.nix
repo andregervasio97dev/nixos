@@ -43,7 +43,7 @@ in{
 	};
 
 	systemd.services."wallpaper-random" = {
-		path = with pkgs; [ bash hyprland hyprpaper ];
+		path = with pkgs; [ bash hyprland hyprpaper hyprland.HYPRLAND_INSTANCE_SIGNATURE ];
 		script = ''
 			set -eu
 			${wallpaper-random}/bin/wallpaper-random
