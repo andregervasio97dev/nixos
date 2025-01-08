@@ -119,7 +119,7 @@ in {
 			}
 			#workspaces button {
 				margin: 0 2px;
-				padding: 0 5px;
+				padding: 5 10px;
 				border: ${mainColors.border};
 				border-radius: 5px;
 				background-color: ${mainColors.background-color};
