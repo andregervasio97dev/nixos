@@ -12,7 +12,7 @@
 		syntaxHighlighting = {
 			enable = true;
 		};
-		ohMyZsh = {
+		oh-my-zsh = {
 			enable = true;
 			theme = "agnoster";
 			plugins = [
