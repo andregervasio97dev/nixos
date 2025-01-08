@@ -146,6 +146,7 @@ in {
 			}
 			#workspaces button.active {
 				color: ${lightColors.textColor};
+				border-color = ${altColors.textColor};
 			}
 			button:hover {
 				background: none;
@@ -154,7 +155,7 @@ in {
 			}
 			#workspaces button:hover {
 				background-color: ${lightColors.background-color};
-				color: ${altColors.textColor};
+				color: ${lightColors.textColor};
 			}
 
 			#clock,
