@@ -56,7 +56,7 @@
 		sddm = {
 			enable = true;
 			autoNumlock = true;
-			theme = "catppuccin-macchiato";
+			theme = "catppuccin-mocha";
 			#package = pkgs.kdePackages.sddm;
 		};
 		defaultSession = "hyprland";
