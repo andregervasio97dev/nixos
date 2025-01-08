@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, pkgs, ... }:
+{ inputs, pkgs, lib, ... }:
 
 {
 	imports = [ 
@@ -57,7 +57,7 @@
 			enable = true;
 			autoNumlock = true;
 			theme = "catppuccin-mocha";
-			#package = pkgs.kdePackages.sddm;
+			package = lib.mkForce(pkgs.kdePackages.sddm);
 		};
 		defaultSession = "hyprland";
 	};
