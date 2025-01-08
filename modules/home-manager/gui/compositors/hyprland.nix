@@ -126,7 +126,13 @@ in {
 			#workspaces button.active {
 				color: ${lightColors.textColor};
 			}
-			#worspaces button:hover {
+			button:hover {
+				background: none;
+				text-shadow: none;
+				box-shadow: none;
+				transition: none;
+			}
+			#workspaces button:hover {
 				background-color: ${lightColors.background-color};
 				color: ${lightColors.textColor};
 			}
