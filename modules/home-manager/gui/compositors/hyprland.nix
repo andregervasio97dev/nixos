@@ -297,7 +297,7 @@ wayland.windowManager.hyprland = {
 				"$mainMod, P, pseudo,"
 				"$mainMod, O, togglesplit,"
 				"$mainMod, F, fullscreen"
-				"$mainMod, W, exec, $browser"
+				"$mainMod, W, exec $browser"
 
 
 # Move focus
@@ -365,6 +365,7 @@ wayland.windowManager.hyprland = {
 				"noinitialfocus, class:^(xwaylandvideobridge)$"
 				"maxsize 1 1, class:^(xwaylandvideobridge)$"
 				"noblur, class:^(xwaylandvideobridge)$"
+				"workspace 2 silent, title: (firefox)(.*)"
 		];
 	};
 };
