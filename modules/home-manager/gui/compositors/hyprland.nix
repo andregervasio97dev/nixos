@@ -115,6 +115,7 @@ in {
 				};
 				"temperature" = {
 					format = "{temperatureC}°C ";
+					critical-threshold = 75;
 				};
 				"backlight" = {
 					format = "{percent}% {icon}";
@@ -172,17 +173,21 @@ in {
 				color: ${mainColors.textColor};
 			}
 			#battery.warning {
-				border: 1px solid ${altColors.warning};
+				border: 2px solid ${altColors.warning};
 			}
 			#battery.critical {
-				border: 1px solid ${altColors.critical};
+				border: 2px solid ${altColors.critical};
 			}
 			#battery.plugged {
-				border: 1px solid ${altColors.regular};
+				border: 2px solid ${altColors.regular};
 			}
 			#battery.charging {
-				border: 1px solid ${altColors.regular};
+				border: 2px solid ${altColors.regular};
 			}
+			#temperatuce.critical {
+				border: 2px solid ${altColors.critical};
+			}
+
 			#tray {
 				margin: 0 2px;
 				padding: 0 5px;
