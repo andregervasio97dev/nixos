@@ -8,6 +8,7 @@
 		./dotfiles/dotfiles.nix
 		./shells/shells.nix
 		./notes/notes.nix
+		./image-handling/image-handling.nix
 	];
 
 	nixpkgs = {
