@@ -7,6 +7,7 @@ let
 	};
 	lightColors = {
 		background-color = "rgba(160, 160, 160, 0.6)";
+		textColor = "rgb(52, 180, 235)";
 	};
 in {
 	programs.waybar = {
@@ -35,15 +36,17 @@ in {
 				"hyprland/workspaces" = {
 					format = "<sub>{id}</sub>{windows}";
 					format-window-separator = " ";
+					persistent-workspaces = {
+						"*" = 3;
+					};
 					window-rewrite = {
 						"kitty" = ">_";
-						"firefox" = "";
-						"waterfox" = "";
-						"dolphin" = "";
+						"firefox" = " ";
+						"dolphin" = " ";
 					};
 				};
 				"tray" = {
-					icon-size = 30;
+					icon-size = 20;
 					spacing = 5;
 				};
 				"clock" = {
@@ -118,9 +121,14 @@ in {
 				border-radius: 5px;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
+				transition-duration: 0.5s;
 			}
 			#workspaces button.active {
-				color: ${mainColors.textColor};
+				color: ${lightColors.textColor};
+			}
+			#worspaces button:hover {
+				background-color: ${lightColors.background-color};
+				color: ${lightColors.textColor};
 			}
 
 			#clock,
