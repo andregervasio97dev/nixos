@@ -187,7 +187,9 @@ in {
 			#temperatuce.critical {
 				border: 2px solid ${altColors.critical};
 			}
-
+			#bluetooth.connected {
+				border: 2px solid ${altColors.regular};
+			}
 			#tray {
 				margin: 0 2px;
 				padding: 0 5px;
