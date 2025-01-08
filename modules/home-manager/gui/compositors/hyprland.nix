@@ -82,7 +82,7 @@ in {
 					"tray"
 				];
 				"hyprland/workspaces" = {
-					format = "<sub>{id}</sub><div class='smallMargin'>{windows}</div>";
+					format = "<sub>{id}</sub>{windows}";
 					format-window-separator = " ";
 					persistent-workspaces = {
 						"*" = 3;
@@ -192,10 +192,6 @@ in {
 			#workspaces button:hover {
 				background-color: ${gradientColors.third};
 				color: ${textColors.focused};
-			}
-
-			.smallMargin {
-				margin: 0 0.1rem;
 			}
 
 			#clock,
