@@ -9,7 +9,7 @@
 			size = 12;
 		};
 		shellIntegration.enableZshIntegration = true;
-		themeFile = "Tropical Neon";
+		themeFile = "Tropical_Neon";
 		settings = {
 			confirm_os_window_close = 0;
 			enable_audio_bell = false;
