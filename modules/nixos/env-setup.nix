@@ -9,7 +9,6 @@
 			unzip
 			neovim
 			wget
-			kitty
 			kitty-themes
 			zsh
 			fastfetch
@@ -52,7 +51,6 @@
 				theme = "agnoster";
 			};
 		};
-		firefox.enable = true;
 		npm.enable = true;
 		nix-ld.enable = true;
 	};
