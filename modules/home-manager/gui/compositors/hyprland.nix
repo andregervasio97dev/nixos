@@ -42,6 +42,10 @@ in {
 						"dolphin" = "";
 					};
 				};
+				"tray" = {
+					icon-size = 30;
+					spacing = 5;
+				};
 				"clock" = {
 					format = "{:%H:%M   %d/%m/%Y  }";
 					tooltip-format = "<tt><small>{calendar}</small></tt>";
