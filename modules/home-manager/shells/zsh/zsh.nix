@@ -14,7 +14,7 @@
 		};
 		oh-my-zsh = {
 			enable = true;
-			theme = "gnzh";
+			theme = "agnoster";
 			plugins = [
 				"colored-man-pages"
 			];
