@@ -12,6 +12,10 @@ let
 	altColors = {
 		textColor = "rgb(66, 245, 108)";
 	};
+	fontSizes = {
+		mainSize = "font-size: 16px";
+		midSize = "font-size: 12px";
+	};
 in {
 	programs.waybar = {
 		enable = true;
@@ -118,7 +122,8 @@ in {
 		style = ''
 			window#waybar {
 				background-color: rgba(255, 255, 255, 0);
-			}
+				font-size: ${fontSizes.mainSize};
+		}
 			#workspaces button {
 				margin: 0 2px;
 				padding: 3px 10px;
