@@ -1,0 +1,7 @@
+{ ... }:
+
+{
+	imports = [
+		./compositors/hyprland.nix
+	];
+}

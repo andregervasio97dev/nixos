@@ -18,6 +18,7 @@
 		networkmanagerapplet
 		qt5.qtwayland
 		qt6.qtwayland
+		kdePackages.xwaylandvideobridge
 	];
 
 	xdg.portal = {

@@ -12,6 +12,8 @@
 		themeFile = "Catppuccin-Macchiato";
 		settings = {
 			confirm_os_window_close = 0;
+			enable_audio_bell = false;
+			show_hyperlink_targets = true;
 		};
 	};
 }
