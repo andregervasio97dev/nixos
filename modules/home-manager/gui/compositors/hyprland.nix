@@ -297,7 +297,7 @@ wayland.windowManager.hyprland = {
 				"$mainMod, P, pseudo,"
 				"$mainMod, O, togglesplit,"
 				"$mainMod, F, fullscreen"
-				"$mainMod, W, exec $browser"
+				"$mainMod, W, exec, $browser"
 
 
 # Move focus
