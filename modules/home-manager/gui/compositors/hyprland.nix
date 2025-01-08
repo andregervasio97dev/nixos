@@ -2,11 +2,13 @@
 let
 	gradientColors = {
 		first = "rgb(54, 1, 103)";
+		firstHex = "360167";
 		second = "rgb(107, 7, 114)";
 		third = "rgb(175, 7, 114)";
 		fourth = "rgb(207, 38, 138)";
 		fifth = "rgb(230, 38, 156)";
 		sixth = "rgb(251, 140, 171)";
+		sixthHex = "FB8CAB";
 		fullGradient = "linear-gradient(
 			45deg,
 			${gradientColors.first},
@@ -252,7 +254,7 @@ wayland.windowManager.hyprland = {
 			"gaps_in" = "2";
 			"gaps_out" = "5";
 			"border_size" = "2";
-			"col.active_border" = "${gradientColors.first}" + " " + "${gradientColors.sixth}" + " " + "45deg";
+			"col.active_border" = "rgba(${gradientColors.firstHex}EE) rgba(${gradientColors.sixthHex}EE) 45deg";
 			"col.inactive_border" = "rgba(BBBBBBaa)";
 
 # Set no enable resizing by click and drag on gaps
