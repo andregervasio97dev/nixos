@@ -8,7 +8,7 @@ let
 		fifth = "rgb(230, 38, 156)";
 		sixth = "rgb(251, 140, 171)";
 		fullGradient = "linear-gradient(
-			60deg,
+			20deg,
 			${gradientColors.first},
 			${gradientColors.second},
 			${gradientColors.third},
@@ -166,8 +166,8 @@ in {
 				padding: 3px 10px;
 				border: ${mainColors.border};
 				border-radius: 0.5rem;
-				background-color: ${mainColors.background-color};
-				color: ${mainColors.textColor};
+				background-color: ${lightColors.background-color};
+				color: ${contrastColors.main};
 			}
 			#workspaces button.active {
 				color: ${contrastColors.main};
