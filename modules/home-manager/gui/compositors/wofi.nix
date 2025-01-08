@@ -65,6 +65,9 @@ in {
 			#text:selected {
 				color: ${textColors.active};
 			}
+			#img {
+				all: unset;
+			}
 		'';
 	};
 }
