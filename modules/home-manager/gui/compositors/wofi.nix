@@ -38,9 +38,7 @@ in {
 			sort_order = "alphabetical";
 		};
 		style = ''
-			window {
-				font-size: 14px;
-				color: ${textColors.focused}
+			#inner-box {
 				background: linear-gradient(
 					rgba(150, 150, 150, 0.5),
 					rgba(150, 150, 150, 0.5)
@@ -49,10 +47,15 @@ in {
 				border: 2px solid transparent;
 			}
 			#input {
-				color: ${contrastColors.main};
+				background-color: ${gradientColors.fullGradient};
+				color: ${textColors.focused};
 			}
 			#entry:selected {
-				background-color: ${gradientColors.third};
+				background-color: ${gradientColors.second};
+			}
+			#text {
+				font-size: 14px;
+				color: ${textColors.unfocused};
 			}
 			#text:selected {
 				color: ${textColors.active};
