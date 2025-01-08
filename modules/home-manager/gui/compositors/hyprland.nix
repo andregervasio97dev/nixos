@@ -167,10 +167,10 @@ in {
 				border: unset;
 				border-radius: 0.8rem;
 				background-color: ${gradientColors.first};
-				color: ${contrastColors.accent};
+				color: ${contrastColors.main};
 			}
 			#workspaces button.active {
-				color: ${contrastColors.main};
+				color: ${contrastColors.accent};
 				background: linear-gradient(
 					rgba(150, 150, 150, 0.5),
 					rgba(150, 150, 150, 0.5)
@@ -184,8 +184,8 @@ in {
 				box-shadow: none;
 			}
 			#workspaces button:hover {
-				background-color: ${lightColors.background-color};
-				color: ${contrastColors.main};
+				background-color: ${gradientColors.sixth};
+				color: ${contrastColors.accent};
 			}
 
 			#clock,
