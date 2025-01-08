@@ -25,6 +25,12 @@ let
 		accent = "rgb(242, 107, 15)";
 	};
 
+	textColors = {
+		active = "rgb(255, 255, 255)";
+		focused = "${contrastColors.main}"; 
+		unfocused = "rgb(150, 150, 150)";
+	};
+
 	mainColors = {
 		textColor = "rgb(255, 255, 255)";
 		background-color = "rgba(100, 100, 100, 0.6)";
@@ -167,10 +173,10 @@ in {
 				border: unset;
 				border-radius: 0.8rem;
 				background-color: ${gradientColors.first};
-				color: ${contrastColors.main};
+				color: ${textColors.unfocused};
 			}
 			#workspaces button.active {
-				color: ${contrastColors.accent};
+				color: ${textColors.active};
 				background: linear-gradient(
 					rgba(150, 150, 150, 0.5),
 					rgba(150, 150, 150, 0.5)
@@ -185,7 +191,7 @@ in {
 			}
 			#workspaces button:hover {
 				background-color: ${gradientColors.third};
-				color: ${contrastColors.accent};
+				color: ${textColors.focused};
 			}
 
 			#clock,
