@@ -170,7 +170,7 @@ in {
 			#workspaces button {
 				margin: 0 2px;
 				padding: 3px 10px;
-				border: unset;
+				border: 2px solid transparent;
 				border-radius: 0.8rem;
 				background-color: ${gradientColors.first};
 				color: ${textColors.unfocused};
