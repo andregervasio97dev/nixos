@@ -189,7 +189,7 @@ wayland.windowManager.hyprland = {
 # Program definitions
 		"$terminal" = "${programs.terminal}";
 		"$fileManager" = "${programs.fileManager}";
-		"$menu" = "${programs.fileManager} --show drun";
+		"$menu" = "${programs.menu} --show drun";
 		"$browser" = "${programs.browser}";
 
 # Autostart daemons and processes
