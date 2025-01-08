@@ -17,6 +17,12 @@ let
 		midSize = "12px";
 		smallSize = "10px";
 	};
+	programs = {
+		terminal = "kitty";
+		fileManager = "dolphin";
+		browser = "firefox";
+		menu = "wofi";
+	};
 in {
 	programs.waybar = {
 		enable = true;
@@ -51,6 +57,7 @@ in {
 						"kitty" = ">_";
 						"firefox" = " ";
 						"dolphin" = " ";
+						"steam" = " ";
 						"discord" = " ";
 						"obsidian" = "󰠮";
 					};
@@ -180,10 +187,10 @@ wayland.windowManager.hyprland = {
 				"HDMI-A-1, preferred, 0x0, 1, mirror, eDP-1"
 		];
 # Program definitions
-		"$terminal" = "kitty";
-		"$fileManager" = "dolphin";
-		"$menu" = "wofi --show drun";
-		"$browser" = "firefox";
+		"$terminal" = "${programs.terminal}";
+		"$fileManager" = "${programs.fileManager}";
+		"$menu" = "${programs.fileManager} --show drun";
+		"$browser" = "${programs.browser}";
 
 # Autostart daemons and processes
 		exec-once = [
@@ -368,12 +375,16 @@ wayland.windowManager.hyprland = {
 # Extra
 		windowrulev2 = [
 			"suppressevent maximize, class:.*"
-				"opacity 0.0 override, class:^(xwaylandvideobridge)$"
-				"noanim, class:^(xwaylandvideobridge)$"
-				"noinitialfocus, class:^(xwaylandvideobridge)$"
-				"maxsize 1 1, class:^(xwaylandvideobridge)$"
-				"noblur, class:^(xwaylandvideobridge)$"
-				"workspace 2 silent, class:^(firefox)$"
+			"opacity 0.0 override, class:^(xwaylandvideobridge)$"
+			"noanim, class:^(xwaylandvideobridge)$"
+			"noinitialfocus, class:^(xwaylandvideobridge)$"
+			"maxsize 1 1, class:^(xwaylandvideobridge)$"
+			"noblur, class:^(xwaylandvideobridge)$"
+			# Defining workspaces for certain windows
+			"workspace 2 silent, class:^(${programs.browser})$"
+			"workspace 3 silent, class:^(${programs.fileManager})$"
+			"workspace 10 silent, class:^(discord)$"
+			"workspace 9 silent, class:^(steam)$"
 		];
 	};
 };
