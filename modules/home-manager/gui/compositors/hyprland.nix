@@ -11,6 +11,9 @@ let
 	};
 	altColors = {
 		textColor = "rgb(66, 245, 108)";
+		regular = "rgba(66, 245, 108, 0.9)";
+		warning = "rgba(255, 255, 26, 0.9)";
+		critical = "rgba(255, 51, 0, 0.9)";
 	};
 	fontSizes = {
 		mainSize = "14px";
@@ -167,6 +170,18 @@ in {
 				border-radius: 1rem;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
+			}
+			#battery.warning {
+				border: 1px solid ${altColors.warning};
+			}
+			#battery.critical {
+				border: 1px solid ${altColors.critical};
+			}
+			#battery.plugged {
+				border: 1px solid ${altColors.regular};
+			}
+			#battery.charging {
+				border: 1px solid ${altColors.regular};
 			}
 			#tray {
 				margin: 0 2px;
