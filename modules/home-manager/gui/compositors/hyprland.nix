@@ -164,8 +164,8 @@ in {
 			#workspaces button {
 				margin: 0 2px;
 				padding: 3px 10px;
-				border: ${mainColors.border};
-				border-radius: 0.5rem;
+				border: unset;
+				border-radius: 0.8rem;
 				background-color: ${gradientColors.first};
 				color: ${contrastColors.accent};
 			}
