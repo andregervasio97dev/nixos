@@ -146,7 +146,7 @@ in {
 			}
 			#workspaces button.active {
 				color: ${lightColors.textColor};
-				border-color = ${altColors.textColor};
+				border-color: ${altColors.textColor};
 			}
 			button:hover {
 				background: none;
