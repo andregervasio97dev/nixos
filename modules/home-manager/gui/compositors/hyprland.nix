@@ -184,7 +184,7 @@ in {
 				box-shadow: none;
 			}
 			#workspaces button:hover {
-				background-color: ${gradientColors.sixth};
+				background-color: ${gradientColors.third};
 				color: ${contrastColors.accent};
 			}
 
