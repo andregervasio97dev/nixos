@@ -46,6 +46,8 @@ in {
 						"kitty" = ">_";
 						"firefox" = " ";
 						"dolphin" = " ";
+						"discord" = " ";
+						"obsidian" = "󰠮";
 					};
 				};
 				"tray" = {
