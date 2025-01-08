@@ -124,7 +124,6 @@ in {
 				border-radius: 5px;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
-				transition-duration: 0.5s;
 			}
 			#workspaces button.active {
 				color: ${lightColors.textColor};
