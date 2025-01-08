@@ -7,6 +7,7 @@
 		./voip/voip.nix
 		./dotfiles/dotfiles.nix
 		./shells/shells.nix
+		./notes/notes.nix
 	];
 
 	nixpkgs = {
