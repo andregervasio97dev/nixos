@@ -8,7 +8,7 @@ let
 		fifth = "rgb(230, 38, 156)";
 		sixth = "rgb(251, 140, 171)";
 		fullGradient = "linear-gradient(
-			45deg,
+			315deg,
 			${gradientColors.first},
 			${gradientColors.second},
 			${gradientColors.third},
@@ -168,8 +168,8 @@ in {
 				color: ${lightColors.textColor};
 				border-color: ${altColors.textColor};
 				background: linear-gradient(
-					${mainColors.background-color},
-					${mainColors.background-color}
+					rgba(0, 0, 0, 0),
+					rgba(0, 0, 0, 0)
 				) padding-box,
 				${gradientColors.fullGradient} border-box;
 				border: 2px solid transparent;
