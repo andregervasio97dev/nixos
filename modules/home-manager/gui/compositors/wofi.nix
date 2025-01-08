@@ -39,6 +39,10 @@ in {
 			width = "25%";
 		};
 		style = ''
+			window {
+				background-color: transparent;
+				border: 0px solid transparent;
+			}
 			#outer-box {
 				background: linear-gradient(
 					rgba(150, 150, 150, 0.5),
