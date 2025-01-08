@@ -2,10 +2,9 @@
 {
 	environment.systemPackages = [(
 		pkgs.catppuccin-sddm.override {
-			flavor = "Macchiato";
+			flavor = "mocha";
 			font  = "0xProto";
 			fontSize = "12";
-			background = "/home/illyanda/Pictures/Ygg.jpg";
 			loginBackground = true;
 		}
 	)];
