@@ -4,7 +4,6 @@
 	programs.zsh = {
 		enable = true;
 		enableCompletion = true;
-		enableLsColors = true;
 		autosuggestion.enable = true;
 		shellAliases = {
 			ll = "ls -sahl";
