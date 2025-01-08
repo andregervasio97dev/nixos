@@ -8,7 +8,7 @@ let
 		fifth = "rgb(230, 38, 156)";
 		sixth = "rgb(251, 140, 171)";
 		fullGradient = "linear-gradient(
-			20deg,
+			to right bottom,
 			${gradientColors.first},
 			${gradientColors.second},
 			${gradientColors.third},
@@ -166,14 +166,14 @@ in {
 				padding: 3px 10px;
 				border: ${mainColors.border};
 				border-radius: 0.5rem;
-				background-color: ${lightColors.background-color};
-				color: ${contrastColors.main};
+				background-color: ${gradientColors.first};
+				color: ${contrastColors.accent};
 			}
 			#workspaces button.active {
 				color: ${contrastColors.main};
 				background: linear-gradient(
-					rgba(150, 150, 150, 0.4),
-					rgba(150, 150, 150, 0.4)
+					rgba(150, 150, 150, 0.5),
+					rgba(150, 150, 150, 0.5)
 				) padding-box,
 				${gradientColors.fullGradient} border-box;
 				border: 2px solid transparent;
@@ -185,7 +185,7 @@ in {
 			}
 			#workspaces button:hover {
 				background-color: ${lightColors.background-color};
-				color: ${lightColors.textColor};
+				color: ${contrastColors.main};
 			}
 
 			#clock,
