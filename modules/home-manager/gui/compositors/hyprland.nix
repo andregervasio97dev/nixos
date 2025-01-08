@@ -1,9 +1,27 @@
 { ... }:
 let
+	gradientColors = {
+		first = "rgb(54, 1, 103)";
+		second = "rgb(107, 7, 114)";
+		third = "rgb(175, 7, 114)";
+		fourth = "rgb(207, 38, 138)";
+		fifth = "rgb(230, 38, 156)";
+		sixth = "rgb(251, 140, 171)";
+		fullGradient = "linear-gradient(
+			45deg,
+			${gradientColors.first},
+			${gradientColors.second},
+			${gradientColors.third},
+			${gradientColors.fourth},
+			${gradientColors.fifth},
+			${gradientColors.sixth}
+		)";
+	};
+
 	mainColors = {
 		textColor = "rgb(255, 255, 255)";
 		background-color = "rgba(100, 100, 100, 0.6)";
-		border = "1px solid rgb(60, 60, 60)";
+		border = "2px solid rgb(60, 60, 60)";
 	};
 	lightColors = {
 		background-color = "rgba(160, 160, 160, 0.6)";
@@ -234,7 +252,13 @@ wayland.windowManager.hyprland = {
 			"gaps_in" = "2";
 			"gaps_out" = "5";
 			"border_size" = "2";
-			"col.active_border" = "rgba(6710C2bb) rgba(C81D77bb) 45deg";
+			"col.active_border" = "${gradientColors.first}
+			${gradientColors.second}
+			${gradientColors.third}
+			${gradientColors.fourth}
+			${gradientColors.fifth}
+			${gradientColors.sixth}
+			45deg";
 			"col.inactive_border" = "rgba(BBBBBBaa)";
 
 # Set no enable resizing by click and drag on gaps
