@@ -43,7 +43,10 @@ in{
 	};
 
 	systemd.services."wallpaper-random" = {
-		path = with pkgs; [ bash hyprland hyprpaper hyprland.HYPRLAND_INSTANCE_SIGNATURE ];
+		path = with pkgs; [ bash hyprland hyprpaper ];
+		environment = {
+			HYPRLAND_INSTANCE_SIGNATURE = (builtins.getEnv "HYPRLAND_INSTANCE_SIGNATURE"); 
+		};
 		script = ''
 			set -eu
 			${wallpaper-random}/bin/wallpaper-random
