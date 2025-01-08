@@ -38,6 +38,17 @@ in {
 			sort_order = "alphabetical";
 		};
 		style = ''
+			window {
+				color: ${textColors.focused};
+			}
+			#outer-box {
+				background: linear-gradient(
+					rgba(150, 150, 150, 0.5),
+					rgba(150, 150, 150, 0.5)
+					) padding-box,
+					${gradientColors.fullGradient} border-box;
+				border: 2px solid transparent;
+			}
 			#inner-box {
 				background: linear-gradient(
 					rgba(150, 150, 150, 0.5),
