@@ -2,13 +2,11 @@
 let
 	gradientColors = {
 		first = "rgb(54, 1, 103)";
-		firstHex = "360167";
 		second = "rgb(107, 7, 114)";
 		third = "rgb(175, 7, 114)";
 		fourth = "rgb(207, 38, 138)";
 		fifth = "rgb(230, 38, 156)";
 		sixth = "rgb(251, 140, 171)";
-		sixthHex = "FB8CAB";
 		fullGradient = "linear-gradient(
 			45deg,
 			${gradientColors.first},
@@ -18,6 +16,8 @@ let
 			${gradientColors.fifth},
 			${gradientColors.sixth}
 		)";
+		firstHex = "360167";
+		sixthHex = "FB8CAB";
 	};
 
 	mainColors = {
@@ -167,6 +167,12 @@ in {
 			#workspaces button.active {
 				color: ${lightColors.textColor};
 				border-color: ${altColors.textColor};
+				background: linear-gradient(
+					${mainColors.background-color},
+					${mainColors.background-color}
+				) padding-box,
+				${gradientColors.fullGradient} border-box;
+				border: 2px solid transparent;
 			}
 			button:hover {
 				background: none;
