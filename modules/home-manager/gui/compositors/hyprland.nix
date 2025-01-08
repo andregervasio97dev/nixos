@@ -13,9 +13,9 @@ let
 		textColor = "rgb(66, 245, 108)";
 	};
 	fontSizes = {
-		mainSize = "12px";
-		midSize = "10px";
-		smallSize = "8px";
+		mainSize = "14px";
+		midSize = "12px";
+		smallSize = "10px";
 	};
 in {
 	programs.waybar = {
