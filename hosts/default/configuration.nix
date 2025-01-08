@@ -56,6 +56,9 @@
 		sddm = {
 			enable = true;
 			autoNumlock = true;
+			settings = {
+				background = "/home/illyanda/Pictures/Ygg.jpg";
+			};
 		};
 		defaultSession = "hyprland";
 	};
