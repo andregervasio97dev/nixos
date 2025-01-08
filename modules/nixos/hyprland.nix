@@ -3,7 +3,7 @@
 	wallpaper-random = pkgs.writeShellApplication {
 		name = "wallpaper-random";
 		text = ''
-			bash /home/illyanda/Scripts/set_random_wallpaper.sh
+			${pkgs.bash}/bin/bash /home/illyanda/Scripts/set_random_wallpaper.sh
 		'';
 	};
 in{
@@ -44,9 +44,6 @@ in{
 
 	systemd.services."wallpaper-random" = {
 		path = with pkgs; [ bash hyprland hyprpaper ];
-		environment = {
-			HYPRLAND_INSTANCE_SIGNATURE = (builtins.getEnv "HYPRLAND_INSTANCE_SIGNATURE"); 
-		};
 		script = ''
 			set -eu
 			${wallpaper-random}/bin/wallpaper-random
