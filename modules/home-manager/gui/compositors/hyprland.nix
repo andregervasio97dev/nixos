@@ -9,6 +9,9 @@ let
 		background-color = "rgba(160, 160, 160, 0.6)";
 		textColor = "rgb(52, 180, 235)";
 	};
+	altColors = {
+		textColor = "rgb(66, 245, 108)";
+	};
 in {
 	programs.waybar = {
 		enable = true;
@@ -130,11 +133,10 @@ in {
 				background: none;
 				text-shadow: none;
 				box-shadow: none;
-				transition: none;
 			}
 			#workspaces button:hover {
 				background-color: ${lightColors.background-color};
-				color: ${lightColors.textColor};
+				color: ${altColors.textColor};
 			}
 
 			#clock,
