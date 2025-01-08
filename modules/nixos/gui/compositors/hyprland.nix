@@ -6,6 +6,8 @@
 	};
 
 	environment.systemPackages = with pkgs; [
+		# App runner
+		wofi
 		# Notifier daemon
 		dunst
 		# dependancy for dunst
