@@ -136,7 +136,7 @@ in {
 				margin: 0 2px;
 				padding: 3px 10px;
 				border: ${mainColors.border};
-				border-radius: 5px;
+				border-radius: 0.5rem;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
 			}
@@ -164,7 +164,7 @@ in {
 				margin: 0 2px;
 				padding: 0 5px;
 				border: ${mainColors.border};
-				border-radius: 5px;
+				border-radius: 1rem;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
 			}
@@ -172,7 +172,7 @@ in {
 				margin: 0 2px;
 				padding: 0 5px;
 				border: ${mainColors.border};
-				border-radius: 5px;
+				border-radius: 0.5rem;
 				background-color: ${lightColors.background-color};
 			}
 		'';
