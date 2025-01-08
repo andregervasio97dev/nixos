@@ -39,6 +39,10 @@ in {
 			width = "25%";
 		};
 		style = ''
+			window {
+				border-radius: 0.5rem;
+				overflow: hidden;
+			}
 			#outer-box {
 				background: linear-gradient(
 					rgba(150, 150, 150, 0.5),
