@@ -9,7 +9,7 @@
 			size = 12;
 		};
 		shellIntegration.enableZshIntegration = true;
-		themeFile = "Catppuccin-Macchiato";
+		themeFile = "Tropical Neon";
 		settings = {
 			confirm_os_window_close = 0;
 			enable_audio_bell = false;
