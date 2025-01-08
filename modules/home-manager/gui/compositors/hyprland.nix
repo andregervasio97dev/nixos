@@ -163,7 +163,7 @@ in {
 			#bluetooth {
 				margin: 0 2px;
 				padding: 0 5px;
-				border: ${mainColors.border};
+				border: unset;
 				border-radius: 1rem;
 				background-color: ${mainColors.background-color};
 				color: ${mainColors.textColor};
