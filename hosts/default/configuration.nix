@@ -14,7 +14,6 @@
       ../../modules/nixos/env-setup.nix
       ../../modules/nixos/hyprland.nix
       ../../modules/nixos/steam/steam.nix
-	  ../../scripts/set-random-wallpaper.nix
     ];
 
   main-user.enable = true;
