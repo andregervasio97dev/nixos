@@ -252,7 +252,7 @@ wayland.windowManager.hyprland = {
 			"gaps_in" = "2";
 			"gaps_out" = "5";
 			"border_size" = "2";
-			"col.active_border" = "${gradientColors.first} ${gradientColors.sixth} 45deg";
+			"col.active_border" = "${gradientColors.first}" + " " + "${gradientColors.sixth}" + " " + "45deg";
 			"col.inactive_border" = "rgba(BBBBBBaa)";
 
 # Set no enable resizing by click and drag on gaps
