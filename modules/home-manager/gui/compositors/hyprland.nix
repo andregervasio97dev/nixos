@@ -8,7 +8,7 @@ let
 		fifth = "rgb(230, 38, 156)";
 		sixth = "rgb(251, 140, 171)";
 		fullGradient = "linear-gradient(
-			315deg,
+			60deg,
 			${gradientColors.first},
 			${gradientColors.second},
 			${gradientColors.third},
@@ -18,6 +18,11 @@ let
 		)";
 		firstHex = "360167";
 		sixthHex = "FB8CAB";
+	};
+
+	contrastColors = {
+		main = "rgb(252, 199, 55)";
+		accent = "rgb(242, 107, 15)";
 	};
 
 	mainColors = {
@@ -165,11 +170,10 @@ in {
 				color: ${mainColors.textColor};
 			}
 			#workspaces button.active {
-				color: ${lightColors.textColor};
-				border-color: ${altColors.textColor};
+				color: ${contrastColors.main};
 				background: linear-gradient(
-					rgba(0, 0, 0, 0),
-					rgba(0, 0, 0, 0)
+					rgba(150, 150, 150, 0.4),
+					rgba(150, 150, 150, 0.4)
 				) padding-box,
 				${gradientColors.fullGradient} border-box;
 				border: 2px solid transparent;
