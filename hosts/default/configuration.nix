@@ -57,7 +57,7 @@
 			enable = true;
 			autoNumlock = true;
 			theme = "catppuccin-macchiato";
-			package = pkgs.kdePackages.sddm;
+			#package = pkgs.kdePackages.sddm;
 		};
 		defaultSession = "hyprland";
 	};
