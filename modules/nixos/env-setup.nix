@@ -23,6 +23,8 @@
 	  python313Packages.pip
 	  nil
       kdePackages.xwaylandvideobridge
+	  cowsay
+	  lolcat
     ];
     variables = {
       EDITOR = "nvim";

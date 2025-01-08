@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ inputs, ... }:
 
 {
   imports =
@@ -14,6 +14,7 @@
       ../../modules/nixos/env-setup.nix
       ../../modules/nixos/hyprland.nix
       ../../modules/nixos/steam/steam.nix
+	  ../../scripts/set-random-wallpaper.nix
     ];
 
   main-user.enable = true;
