@@ -27,8 +27,12 @@
 			go
 			rustc
 			python313
+			odin
+			ruby
 			# Language server
 			nil
+			#ols
+			#ruby-lsp
 			# Builders
 			libgcc
 		];
