@@ -363,72 +363,74 @@ wayland.windowManager.hyprland = {
 		bind = [
 # Main shortcuts
 			"$mainMod, return, exec, $terminal"
-				"$mainMod, Q, killactive,"
-				"$mainMod, M, exit,"
-				"$mainMod, E, exec, $menu"
-				"$mainMod, N, exec, $fileManager"
-				"$mainMod, V, togglefloating,"
-				"$mainMod, P, pseudo,"
-				"$mainMod, O, togglesplit,"
-				"$mainMod, F, fullscreen"
-				"$mainMod, W, exec, $browser"
+			"$mainMod, Q, killactive,"
+			"$mainMod, M, exit,"
+			"$mainMod, E, exec, $menu"
+			"$mainMod, N, exec, $fileManager"
+			"$mainMod, V, togglefloating,"
+			"$mainMod, P, pseudo,"
+			"$mainMod, O, togglesplit,"
+			"$mainMod, F, fullscreen"
+			"$mainMod, W, exec, $browser"
+			"$mainMod, PRINT, exec, hyprshot -m output"
+			"$mainMod SHIFT, PRINT, exec, hyprshot -m region"
 
 
 # Move focus
-				"$mainMod, H, movefocus, l"
-				"$mainMod, J, movefocus, d"
-				"$mainMod, K, movefocus, u"
-				"$mainMod, L, movefocus, r"
+			"$mainMod, H, movefocus, l"
+			"$mainMod, J, movefocus, d"
+			"$mainMod, K, movefocus, u"
+			"$mainMod, L, movefocus, r"
 
 # Move active window
-				"$mainMod SHIFT, H, movewindow, l"
-				"$mainMod SHIFT, J, movewindow, d"
-				"$mainMod SHIFT, K, movewindow, u"
-				"$mainMod SHIFT, L, movewindow, r"
+			"$mainMod SHIFT, H, movewindow, l"
+			"$mainMod SHIFT, J, movewindow, d"
+			"$mainMod SHIFT, K, movewindow, u"
+			"$mainMod SHIFT, L, movewindow, r"
 
 # Switch workspaces
-				"$mainMod, 1, workspace, 1"
-				"$mainMod, 2, workspace, 2"
-				"$mainMod, 3, workspace, 3"
-				"$mainMod, 4, workspace, 4"
-				"$mainMod, 5, workspace, 5"
-				"$mainMod, 6, workspace, 6"
-				"$mainMod, 7, workspace, 7"
-				"$mainMod, 8, workspace, 8"
-				"$mainMod, 9, workspace, 9"
-				"$mainMod, 0, workspace, 10"
+			"$mainMod, 1, workspace, 1"
+			"$mainMod, 2, workspace, 2"
+			"$mainMod, 3, workspace, 3"
+			"$mainMod, 4, workspace, 4"
+			"$mainMod, 5, workspace, 5"
+			"$mainMod, 6, workspace, 6"
+			"$mainMod, 7, workspace, 7"
+			"$mainMod, 8, workspace, 8"
+			"$mainMod, 9, workspace, 9"
+			"$mainMod, 0, workspace, 10"
 
 # Move window to workspace
-				"$mainMod SHIFT, 1, movetoworkspace, 1"
-				"$mainMod SHIFT, 2, movetoworkspace, 2"
-				"$mainMod SHIFT, 3, movetoworkspace, 3"
-				"$mainMod SHIFT, 4, movetoworkspace, 4"
-				"$mainMod SHIFT, 5, movetoworkspace, 5"
-				"$mainMod SHIFT, 6, movetoworkspace, 6"
-				"$mainMod SHIFT, 7, movetoworkspace, 7"
-				"$mainMod SHIFT, 8, movetoworkspace, 8"
-				"$mainMod SHIFT, 9, movetoworkspace, 9"
-				"$mainMod SHIFT, 0, movetoworkspace, 10"
+			"$mainMod SHIFT, 1, movetoworkspace, 1"
+			"$mainMod SHIFT, 2, movetoworkspace, 2"
+			"$mainMod SHIFT, 3, movetoworkspace, 3"
+			"$mainMod SHIFT, 4, movetoworkspace, 4"
+			"$mainMod SHIFT, 5, movetoworkspace, 5"
+			"$mainMod SHIFT, 6, movetoworkspace, 6"
+			"$mainMod SHIFT, 7, movetoworkspace, 7"
+			"$mainMod SHIFT, 8, movetoworkspace, 8"
+			"$mainMod SHIFT, 9, movetoworkspace, 9"
+			"$mainMod SHIFT, 0, movetoworkspace, 10"
 
 # Alt + Tab support
-				"Alt, Tab, cyclenext"
-				"Alt, Tab, bringactivetotop"
+			"Alt, Tab, cyclenext"
+			"Alt, Tab, bringactivetotop"
 
-				];
+			];
 
 		bindm = [
 			"SUPER, mouse:272, movewindow"
-				"SUPER, mouse:273, resizewindow"
+			"SUPER, mouse:273, resizewindow"
 		];
 
 # Laptop multimedia keys
 		bindel = [
 			",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-				",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-				",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-				",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-				",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-				",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+			",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+			",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+			",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+			",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
+			",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
 		];
 
 # Extra

@@ -10,12 +10,14 @@
 		wofi
 		# Notifier daemon
 		dunst
-		# dependancy for dunst
+		# Dependancy for dunst
 		libnotify
-		# wallpaper daemon
+		# Wallpaper daemon
 		hyprpaper
-		# screenshot App
+		# Screenshot App
 		hyprshot
+		# Screen-Lock
+		hyprlock
 		# GUI for network
 		networkmanagerapplet
 		qt5.qtwayland
