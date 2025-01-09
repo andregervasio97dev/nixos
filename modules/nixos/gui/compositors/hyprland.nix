@@ -14,6 +14,8 @@
 		libnotify
 		# wallpaper daemon
 		hyprpaper
+		# screenshot App
+		hyprshot
 		# GUI for network
 		networkmanagerapplet
 		qt5.qtwayland
