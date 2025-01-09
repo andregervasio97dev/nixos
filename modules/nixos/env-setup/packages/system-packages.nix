@@ -28,10 +28,8 @@
 			rustc
 			python313
 			odin
-			ruby
 			# Language server
 			nil
-			ruby-lsp
 			# Builders
 			libgcc
 		];
