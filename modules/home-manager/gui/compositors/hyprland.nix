@@ -372,6 +372,7 @@ wayland.windowManager.hyprland = {
 			"$mainMod, O, togglesplit,"
 			"$mainMod, F, fullscreen"
 			"$mainMod, W, exec, $browser"
+			"$mainMod, HOME, exec, hyprlock"
 			"$mainMod, PRINT, exec, hyprshot -m output"
 			"$mainMod SHIFT, PRINT, exec, hyprshot -m region"
 
