@@ -31,8 +31,7 @@
 			ruby
 			# Language server
 			nil
-			#ols
-			#ruby-lsp
+			ruby-lsp
 			# Builders
 			libgcc
 		];
