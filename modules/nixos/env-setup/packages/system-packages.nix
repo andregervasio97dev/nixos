@@ -31,6 +31,7 @@
 			rustc
 			python313
 			odin
+			deno
 			# Language server
 			nil
 			# Builders
