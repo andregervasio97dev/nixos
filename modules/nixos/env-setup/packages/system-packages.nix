@@ -18,6 +18,8 @@
 			# Visual
 			kitty-themes
 			fastfetch
+			# HEHEHEHEHE
+			sl
 			cowsay
 			lolcat
 			# Package managers
