@@ -4,6 +4,7 @@
 	environment = {
 		systemPackages = with pkgs; [
 			# Basic tools
+			ripgrep
 			curl
 			wget
 			unzip
