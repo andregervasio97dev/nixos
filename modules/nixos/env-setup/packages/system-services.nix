@@ -19,7 +19,7 @@
 					(defsrc
 						caps
 						a s d f
-						h j k l
+						j k l ;
 					)
 					(defvar
 						tap-time 200
@@ -31,10 +31,10 @@
 						s-mod (tap-hold $tap-time $hold-time s ctl)
 						d-mod (tap-hold $tap-time $hold-time d lmet)
 						f-mod (tap-hold $tap-time $hold-time f lalt)
-						h-mod (tap-hold $tap-time $hold-time h lalt)
-						j-mod (tap-hold $tap-time $hold-time j rmet)
-						k-mod (tap-hold $tap-time $hold-time k rctl)
-						l-mod (tap-hold $tap-time $hold-time l rsft)
+						j-mod (tap-hold $tap-time $hold-time j lalt)
+						k-mod (tap-hold $tap-time $hold-time k rmet)
+						l-mod (tap-hold $tap-time $hold-time l rctl)
+						;-mod (tap-hold $tap-time $hold-time ; rsft)
 					)
 					(deflayer base
 						@caps-mod
@@ -42,10 +42,10 @@
                         @s-mod
                         @d-mod
                         @f-mod
-                        @h-mod
                         @j-mod
                         @k-mod
                         @l-mod
+                        @;-mod
 					)
 				'';
 			};
