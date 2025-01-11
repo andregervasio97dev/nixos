@@ -12,7 +12,7 @@
 		];
 	};
 	services.kanata = {
-		enable = true;
+		enable = false;
 		keyboards = {
 				kanata.extraDefCfg = "process-unmapped-keys yes";
 				kanata.config = ''
