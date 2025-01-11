@@ -16,7 +16,7 @@
 			"uinput"
 		];
 	};
-	/*
+	
 	services.kanata = {
 		enable = true;
 		keyboards = {
@@ -43,5 +43,4 @@
 			};
 		};
 	};
-	*/
 }
