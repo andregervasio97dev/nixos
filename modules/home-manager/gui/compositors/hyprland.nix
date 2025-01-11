@@ -353,7 +353,9 @@ wayland.windowManager.hyprland = {
 
 # Input
 		input = {
-			"kb_layout" = "us";
+			"kb_layout" = "us, us";
+			"kb_variant" = ", intl";
+			"kb_options" = "grp:win_space_toggle";
 
 			"follow_mouse" = "2";
 		};
