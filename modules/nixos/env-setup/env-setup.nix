@@ -7,5 +7,6 @@
 		./packages/system-programs.nix
 		./packages/system-fonts.nix
 		./packages/sddm-themes.nix
+		./packages/system-services.nix
 	];
 }
