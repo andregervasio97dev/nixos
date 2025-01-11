@@ -22,6 +22,7 @@ in
 			extraGroups = [
 				"networkmanager" 
 				"wheel"
+				"input"
 				"uinput"
 			];
 			description = "illyanda";
