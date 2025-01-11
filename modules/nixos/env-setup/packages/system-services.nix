@@ -35,6 +35,9 @@
 					(defalias
 						caps (tap-hold $tap-time $hold-time esc caps)
 					)
+					(deflayer base
+						@caps
+					)
 				'';
 			};
 		};
