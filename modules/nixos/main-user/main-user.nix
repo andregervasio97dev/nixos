@@ -19,7 +19,11 @@ in
 		users.users.${cfg.userName} = {
 			isNormalUser = true;
 			initialPassword = "a";
-			extraGroups = [ "networkmanager" "wheel" ];
+			extraGroups = [
+				"networkmanager" 
+				"wheel"
+				"uinput"
+			];
 			description = "illyanda";
 			shell = pkgs.zsh;
 		};
