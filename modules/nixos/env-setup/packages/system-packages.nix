@@ -12,6 +12,7 @@
 			btop
 			wayclip
 			git
+			pavucontrol
 			# Terminal usage
 			tree
 			neovim
