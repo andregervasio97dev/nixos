@@ -143,6 +143,7 @@ in {
 				"pulseaudio" = {
 					format = "{volume}%  ";
 					scroll-step = 5;
+					on-click = "pavucontrol";
 				};
 				"temperature" = {
 					format = "{temperatureC}°C ";
