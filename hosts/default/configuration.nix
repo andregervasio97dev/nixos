@@ -67,8 +67,8 @@
 
 	# Configure keymap in X11
 	services.xserver.xkb = {
-		layout = "us,us-intl";
-		variant = "";
+		layout = "us,us";
+		variant = ", intl";
 		options = "grp:alt_space_toggle";
 	};
 
