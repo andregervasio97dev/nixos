@@ -284,8 +284,8 @@ wayland.windowManager.hyprland = {
 # Decoration
 		decoration = {
 			rounding = "3";
-			"active_opacity" = "0.9";
-			"inactive_opacity" = "0.7";
+			"active_opacity" = "1";
+			"inactive_opacity" = "0.9";
 
 			shadow = {
 				enabled = "true";
