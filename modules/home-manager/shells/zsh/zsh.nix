@@ -19,5 +19,8 @@
 				"colored-man-pages"
 			];
 		};
+		initExtra = ''
+			eval "$(fnm env --use-on-cd --shell zsh)"
+		'';
 	};
 }
