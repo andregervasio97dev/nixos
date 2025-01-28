@@ -37,6 +37,8 @@
 			nil
 			# Builders
 			libgcc
+			# Version managers
+			fnm
 		];
 	};
 }
