@@ -26,15 +26,20 @@
 			lolcat
 			# Package managers
 			cargo
-			python313Packages.pip
+			python312Packages.pip
+			python312Packages.python-lsp-server
 			# Languages
 			go
 			rustc
-			python313
-			odin
+			python312Full
 			deno
 			# Language server
 			nil
+			typescript-language-server
+			lua-language-server
+			bash-language-server
+			vim-language-server
+			gopls
 			# Builders
 			libgcc
 			# Version managers
