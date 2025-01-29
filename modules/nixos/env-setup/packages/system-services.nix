@@ -28,7 +28,7 @@
 						hold-time 200
 					)
 					(defalias
-						tab-mod (tap-hold $tap-time $hold-time tab layer-toggle movement)
+						tab-mod (tap-hold $tap-time $hold-time tab (layer-toggle movement))
 						caps-mod (tap-hold $tap-time $hold-time esc caps)
 						a-mod (tap-hold $tap-time $hold-time a lsft)
 						s-mod (tap-hold $tap-time $hold-time s ctl)
