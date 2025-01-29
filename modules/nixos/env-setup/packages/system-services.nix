@@ -49,7 +49,7 @@
 					(deflayer movement
 						_    _    _    _    _    _    _    _    _    _    _    _    _    _
 						_    _    _    _    _    _    _    _    _    _    _    _    _    _
-						_    _    _    _    _    lft  down up   rght _    _    _    _
+						_    _    _    _    _    _    lft  down up   rght _    _    _    
 						_    _    _    _    _    _    _    _    _    _    _    _
 						_    _    _              _              _    _    _
 					)
