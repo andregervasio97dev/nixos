@@ -44,8 +44,6 @@
 			libgcc
 			# Version managers
 			fnm
-			# Gaming
-			openmw-tes3mp
 		];
 	};
 }
