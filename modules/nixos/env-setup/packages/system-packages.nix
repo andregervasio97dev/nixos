@@ -46,6 +46,7 @@
 			fnm
 			# Gaming
 			openmw
+			openmw-tes3mp
 		];
 	};
 }
