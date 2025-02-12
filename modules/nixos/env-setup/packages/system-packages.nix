@@ -45,7 +45,6 @@
 			# Version managers
 			fnm
 			# Gaming
-			openmw
 			openmw-tes3mp
 		];
 	};
