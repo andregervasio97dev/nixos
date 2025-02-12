@@ -45,7 +45,7 @@
 			# Version managers
 			fnm
 			# Gaming
-			libsForQt5.full
+			openmw
 		];
 	};
 }
