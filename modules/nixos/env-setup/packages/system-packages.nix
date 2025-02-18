@@ -13,6 +13,8 @@
 			wayclip
 			git
 			pavucontrol
+			syncthing
+			syncthingtray
 			# Terminal usage
 			tree
 			neovim
